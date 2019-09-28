@@ -1,0 +1,24 @@
+user Model:
+    id(integerfield)
+    name(charfield)
+    email(charfield)
+    password(charfield)
+    manager(F K user null=True)
+
+Mack Address Model:
+    id(integerfield)
+    employee_name(F K User)
+    address(integerfield)
+
+Locatoion Model:
+    in(integerfield)
+    point(Gis field)
+    
+
+Assign Model:
+    id(integerfield)
+    employee(F K User)
+    date(datefield)
+    status(choosefiled)
+    area(F K Locatoion)
+

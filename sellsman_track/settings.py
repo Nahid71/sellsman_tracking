@@ -39,12 +39,14 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.gis',
 
     # 3rd party apps
     'debug_toolbar',
     'rest_framework',
     'rest_framework.authtoken',
     'rest_framework_datatables',
+
 
     # myapp
     'accounts',
@@ -91,9 +93,14 @@ WSGI_APPLICATION = 'sellsman_track.wsgi.application'
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
 DATABASES = {
-    'default': dj_database_url.config(
-        default=config('DATABASE_URL')
-    )
+    'default': {
+        'ENGINE': 'django.contrib.gis.db.backends.postgis',
+        'NAME': 'sellsmandb',
+        'USER': 'user001',
+        'PASSWORD': '123456789',
+        'HOST': 'localhost',
+        'PORT': '5432'
+    }
 }
 
 
