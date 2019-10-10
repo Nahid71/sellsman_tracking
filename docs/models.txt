@@ -11,7 +11,7 @@ Mack Address Model:
     address(integerfield)
 
 Locatoion Model:
-    in(integerfield)
+    id(integerfield)
     point(Gis field)
     
 

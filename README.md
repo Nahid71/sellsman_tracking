@@ -7,6 +7,6 @@ for install Geodjango in Linux follow this (https://realpython.com/location-base
 1. Create your virtual environment and activate
 2. clone this repository using 'git clone'
 3. Install requirements `pip install -r requirements.txt`
-4. 
+4. change database configarations
 5. `python manage.py migrate`
 5. `python manage.py runserver`
