@@ -17,7 +17,7 @@ nosetests.xml
 coverage.xml
 *,cover
 .hypothesis/
-
+requirementsbackup.txt
 
 # Django stuff:
 *.log
